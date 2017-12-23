@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function func()
+        {
+            document.getElementById('h').value="<pre>"+document.getElementById('t').value+"</pre>";
+        }
+    </script>
+</head>
+<body>
+
+<form action="/code" method="post">
+    <textarea id="t" name="text"></textarea>
+    <input type="hidden" name="val" id="h">
+    <input type="submit" onclick="func()">
+</form>
+</body>
+</html>
